@@ -1,0 +1,12 @@
+Source: ros-rolling-stubborn-buddies
+Section: misc
+Priority: optional
+Maintainer: Marco A. Gutiérrez <marco@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, librcutils-dev, libstd-msgs-dev, python3-rcutils, python3-std-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-rclcpp-lifecycle, ros-rolling-stubborn-buddies-msgs, ros-std-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-stubborn-buddies
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, librcutils-dev, libstd-msgs-dev, python3-rcutils, python3-std-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-rclcpp-lifecycle, ros-rolling-stubborn-buddies-msgs, ros-std-msgs, ros-rolling-ros-workspace
+Description: Demo that uses node composition of lifecycle nodes to achieve fail-over robustness on ROS nodes
